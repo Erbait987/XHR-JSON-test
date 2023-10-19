@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  margin-top: 30px;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  background-color: #7596bf;
+  border-radius: 8px;
+}
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.image {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
