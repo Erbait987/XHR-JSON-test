@@ -1,5 +1,6 @@
 const btn = document.querySelector(".btn");
 const wrapper = document.querySelector(".wrapper");
+const btnConsole = document.querySelector(".btn-get");
 let flag = false; // что не спамить на get
 
 btn.onclick = () => {
@@ -26,4 +27,15 @@ btn.onclick = () => {
       });
     };
   }
+};
+
+btnConsole.onclick = () => {
+  const request = new XMLHttpRequest();
+  request.open("GET", "getJsonObj.json");
+  request.setRequestHeader("Content-type", "application/json");
+  request.send();
+  request.onload = () => {
+    const data = JSON.parse(request.response);
+    console.log(data);
+  };
 };

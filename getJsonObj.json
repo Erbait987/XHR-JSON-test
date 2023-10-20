@@ -1,0 +1,9 @@
+{
+  "Id": 10,
+  "Name": "Lancelot",
+  "Role": "Assassin",
+  "Jungler": true,
+  "hasLotOfDamage": true,
+  "survival": "poor",
+  "mobile": true
+}
